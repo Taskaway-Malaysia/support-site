@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="min-h-screen">
     <NuxtPage />
   </div>
 </template>
@@ -9,6 +9,9 @@
 useHead({
   htmlAttrs: {
     lang: 'en'
+  },
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - Taskaway Malaysia` : 'Taskaway Malaysia - Support';
   }
 })
 </script>

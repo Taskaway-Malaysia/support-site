@@ -2,14 +2,19 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
 
-  future: {
-    compatibilityVersion: 4
-  },
+  // Nuxt 4 native mode - no compatibility mode needed
+  // Remove future.compatibilityVersion as we're using Nuxt 4 directly
 
-  // Enable Nuxt 4 app directory structure
-  dir: {
-    pages: 'app/pages'
-  },
+  // App directory structure (Nuxt 4 default)
+  srcDir: 'app/',
+
+  // Component auto-import
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false
+    }
+  ],
 
   // Modules
   modules: ['@nuxtjs/tailwindcss'],
@@ -47,7 +52,7 @@ export default defineNuxtConfig({
 
   // Tailwind CSS configuration
   tailwindcss: {
-    cssPath: '~/app/assets/css/main.css',
+    cssPath: '~/assets/css/main.css',
     configPath: 'tailwind.config.ts'
   },
 
