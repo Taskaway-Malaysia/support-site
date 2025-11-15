@@ -249,24 +249,6 @@
           </div>
         </section>
 
-        <!-- Demo Account -->
-        <section class="mb-12">
-          <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg">
-            <h2 class="text-2xl font-bold text-green-900 mb-4">Demo Account for Testing</h2>
-            <div class="space-y-2">
-              <p class="text-gray-700">
-                <strong>Email:</strong> <code class="bg-white px-2 py-1 rounded text-green-800 font-mono">admin@sawangtech.com</code>
-              </p>
-              <p class="text-gray-700">
-                <strong>Password:</strong> <code class="bg-white px-2 py-1 rounded text-green-800 font-mono">password</code>
-              </p>
-              <p class="text-gray-600 mt-4">
-                This account has access to both flows and can be used to test the complete user experience.
-              </p>
-            </div>
-          </div>
-        </section>
-
         <!-- App Features -->
         <section>
           <h2 class="text-2xl font-bold text-gray-900 mb-6">App Features</h2>
